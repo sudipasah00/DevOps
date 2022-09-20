@@ -10,10 +10,10 @@ public class Insertion_Sort
 {
 	public static void main(String[] args) {
 		
-		int A[] = {1,2,3,8,9,4,10,6,7,0}; //Input array
+		int A[] = {1,2,3,8,9,4,10,6,7,0,1,2,3,5}; //Input array
 		int i,j,n,key;
 		//n = size of array
-		n = 10;
+		n = 14;
 		
 		//Insertion Sort algorithm
 		for(i=1 ; i<n ; ++i)
