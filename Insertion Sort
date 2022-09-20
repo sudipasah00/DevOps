@@ -1,0 +1,38 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Insertion_Sort
+{
+	public static void main(String[] args) {
+		
+		int A[] = {1,2,3,8,9,4,10,6,7,0}; //Input array
+		int i,j,n,key;
+		//n = size of array
+		n = 10;
+		
+		//Insertion Sort algorithm
+		for(i=1 ; i<n ; ++i)
+		{
+		    key = A[i];
+		    j = i-1;
+		    while(j>=0 && A[j]>key)
+		    {
+		        A[j+1] = A[j];
+		        --j;
+		    }
+		    A[j+1] = key;
+		}
+		
+		//Print sorted array
+		for(i=0 ; i<n ;++i)
+		{
+		    System.out.println(A[i]);
+		}
+	}
+}
+
